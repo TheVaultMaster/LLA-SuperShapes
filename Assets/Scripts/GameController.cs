@@ -11,9 +11,9 @@ public class GameController : MonoBehaviour
     //The first object will spawn after
     //the spawnDelay and then every spawnTime
     [Header("Default Spawn Delay Time")]
-    public float spawnDelay = 2;
+    public float spawnDelay = 5;
     [Header("Default Spawn Time")]
-    public float spawnTime = 3;
+    public float spawnTime = 6;
 
     [Header("Game Over UI Canvas")]
     public GameObject gameOverCanvas;
@@ -38,6 +38,7 @@ public class GameController : MonoBehaviour
         CancelInvoke("Spawn");
         //Set the gameOverCanvas to be visible
         gameOverCanvas.SetActive(true);
+        Time.timeScale = 0;
     }
 
    
