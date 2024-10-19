@@ -9,7 +9,7 @@ public class Shape : MonoBehaviour
     public Rigidbody2D rb;
     //Shrinking Speed
     [Header("Default Skrinking Speed")]
-    public float shrinkSpeed = 2;
+    public float shrinkSpeed = 4;
 
     // Start is called before the first frame update
     void Start()
